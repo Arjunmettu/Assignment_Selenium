@@ -3,7 +3,7 @@ Feature: Validate dataHub homepage
   @smoke
   Scenario: Verify header is the landingPage
     Given User is on dataHub LandingPage and accept cookies
-    When Following elements are there in landingpage
+    When Following elements are there in landingPage
       | API Dashboard |
       | Download      |
       | Docs          |

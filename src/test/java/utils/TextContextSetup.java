@@ -1,7 +1,5 @@
 package utils;
 
-import java.io.FileInputStream;
-
 import pageObjects.FactoryObjectClass;
 
 public class TextContextSetup {

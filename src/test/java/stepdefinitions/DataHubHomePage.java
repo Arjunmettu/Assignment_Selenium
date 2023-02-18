@@ -46,7 +46,7 @@ public class DataHubHomePage {
 	}
 
 	@Given("User is on dataHub LandingPage and accept cookies")
-	public void user_is_on_dataHub_LandingPage_and_accept_cookies() throws IOException {
+	public void user_is_on_dataHub_LandingPage_and_accept_cookies() {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(dataHubHomePageElementsVar.acceptCookies));
 		dataHubHomePageElementsVar.findElement(dataHubHomePageElementsVar.acceptCookies).click();
 		System.out.println("Accepted cookies in landingPage");
@@ -58,8 +58,8 @@ public class DataHubHomePage {
 
 	}
 
-	@When("Following elements are there in landingpage")
-	public void following_elements_are_there_in_landingpage(DataTable dataTable) {
+	@When("Following elements are there in landingPage")
+	public void Following_elements_are_there_in_landingPage(DataTable dataTable) {
 		List<String> data = dataTable.asList();
 		int i = 0;
 		List<WebElement> headerElements = dataHubHomePageElementsVar
